@@ -1,7 +1,7 @@
 Drip
 ====
 
-*somewhat fast filtering*
+*somewhat fast data science*
 
 ![Mr. Coffee](http://goo.gl/G15qgG)
 
@@ -90,3 +90,4 @@ Combining filters does not slow things down.
 
     : %timeit list(drip.query(data, from_lax & to_oak & very_late))
     100 loops, best of 3: 12.4 ms per loop
+ 
