@@ -48,7 +48,7 @@ A more typical dataset might be a list of tuples. Here we'll use a list
 of words enumerated with sequential ids.
 
     >>> with open("/usr/share/dict/words", "r") as fd:
-    ...    words = [l[:1] for l in fd.readlines()]
+    ...    words = [l.rstrip('\n') for l in fd.readlines()]
     >>> data = list(enumerate(words))
 
 For convenience, the item_keys() function can be used to create key
