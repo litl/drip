@@ -5,7 +5,7 @@ import bitarray
 import functools
 import operator
 
-__version__ = "1.0.0"
+__version__ = "1.0.8"
 
 
 def _identity(x):
