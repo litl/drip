@@ -1,7 +1,7 @@
 Drip
 ====
 
-*somewhat fast data science*
+[![Build Status](https://travis-ci.org/litl/drip.svg?branch=master)](https://travis-ci.org/litl/drip?branch=master) [![Coverage Status](https://coveralls.io/repos/litl/drip/badge.svg?branch=master)](https://coveralls.io/r/litl/drip?branch=master)
 
 ![Mr. Coffee](http://goo.gl/G15qgG)
 
