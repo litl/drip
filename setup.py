@@ -8,12 +8,8 @@ import drip
 # http://peak.telecommunity.com/dist/ez_setup.py
 from setuptools import setup
 
-# Load the test requirements. These are in a separate file so they can
-# be accessed from Travis CI and tox.
-with open("test-requirements.txt") as fd:
-    tests_require = list(fd)
-
 version = drip.__version__
+download_url = "https://github.com/litl/drip/tarball/v{0}".format(version)
 
 setup(
     name="drip",
@@ -22,18 +18,17 @@ setup(
     author_email="bgreen@litl.com",
     license="MIT",
     url="https://github.com/litl/drip",
-    download_url="https://github.com/litl/drip/tarball/v{}".format(version),
+    download_url=download_url,
     description="A library for exploring multivariate datasets",
     py_modules=["drip"],
 
     setup_requires=[
-        "pytest==2.8.4"
+        "pytest==2.8.4",
+        "bitarray==0.8.1",
     ],
-
-    tests_require=[
-        "pytest==2.8.4"
+    install_requires=[
+        "bitarray==0.8.1"
     ],
-
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
