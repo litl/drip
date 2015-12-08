@@ -33,7 +33,6 @@ setup(
     tests_require=[
         "pytest==2.8.4"
     ],
-    cmdclass = {'test': pytest},
 
     classifiers=[
         "Development Status :: 5 - Production/Stable",
