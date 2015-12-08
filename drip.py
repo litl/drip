@@ -117,7 +117,7 @@ def item_keys(items):
         iter(f for f in items)
     except TypeError:
         # if it's not an iterable, expect a number
-        return map(operator.itemgetter, xrange(items))
+        return map(operator.itemgetter, range(items))
     else:
         return [_compose(f, operator.itemgetter(i))
                 for i, f in enumerate(items)]
