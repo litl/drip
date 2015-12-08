@@ -5,6 +5,8 @@ import functools
 import math
 import operator
 
+__version__ = "1.0.0"
+
 
 def identity(x):
     return x
