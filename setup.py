@@ -13,22 +13,26 @@ from setuptools import setup
 with open("test-requirements.txt") as fd:
     tests_require = list(fd)
 
+version = drip.__version__
 
 setup(
     name="drip",
-    version=drip.__version__,
+    version=version,
     author="Bob Green",
     author_email="bgreen@litl.com",
     license="MIT",
     url="https://github.com/litl/drip",
+    download_url="https://github.com/litl/drip/tarball/v{}".format(version),
     description="A library for exploring multivariate datasets",
     py_modules=["drip"],
 
     setup_requires=[
-        "pytest==2.7.2"
+        "pytest==2.8.4"
     ],
 
-    tests_require=['pytest'],
+    tests_require=[
+        "pytest==2.8.4"
+    ],
     cmdclass = {'test': pytest},
 
     classifiers=[
