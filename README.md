@@ -7,7 +7,7 @@ Drip
 
 Drip is a Python library for exploring multivariate datasets. It
 supports incremental filtering and efficient data queries using
-filters back by [bitarrays](https://github.com/ilanschnell/bitarray).
+filters backed by [bitarrays](https://github.com/ilanschnell/bitarray).
 Intersections, unions, nots, and xors of these filters are very fast.
 
 # Usage
