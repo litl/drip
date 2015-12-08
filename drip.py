@@ -114,7 +114,7 @@ def item_keys(items):
     -6
     """
     try:
-        _ = (f for f in items)
+        iter(f for f in items)
     except TypeError:
         # if it's not an iterable, expect a number
         return map(operator.itemgetter, xrange(items))
